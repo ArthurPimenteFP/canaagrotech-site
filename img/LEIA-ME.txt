@@ -1,0 +1,7 @@
+Coloque aqui as 3 fotos do site, com EXATAMENTE estes nomes:
+
+  campo-1.jpg
+  campo-2.jpg
+  campo-3.jpg
+
+Depois pode apagar este arquivo.

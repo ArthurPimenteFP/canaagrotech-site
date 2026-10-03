@@ -1,0 +1,15 @@
+SITE CANA360 - estrutura da pasta
+
+  index.html        pagina do site (conteudo)
+  css/style.css     estilos (cores, layout, fontes)
+  js/main.js        scripts (menu do celular, formulario do WhatsApp, fotos)
+  img/              imagens
+    favicon.png, logo.png        icone e logo
+    tela-*.jpg                   telas dos aplicativos
+    campo-1.jpg, campo-2.jpg, campo-3.jpg   SUAS FOTOS (adicione, ver img/LEIA-ME.txt)
+
+COMO PUBLICAR (Vercel)
+  1) Abra esta pasta no VS Code.
+  2) No terminal, dentro da pasta, rode:  vercel --prod
+     (projeto NOVO chamado canaagrotech-site; nao vincule ao capacidade-produtiva)
+  3) Na Vercel: Settings > Domains > adicione canaagrotech.com.br e www.canaagrotech.com.br
