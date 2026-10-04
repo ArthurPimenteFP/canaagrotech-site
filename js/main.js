@@ -1,4 +1,4 @@
-/* Cana360 - scripts do site */
+/* Cana Agro Tech - scripts do site */
 (function(){
   /* fotos opcionais */
   var faixa=document.getElementById('fotos');

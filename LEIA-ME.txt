@@ -1,10 +1,12 @@
-SITE CANA360 - estrutura da pasta
+SITE CANA AGRO TECH - estrutura da pasta
 
   index.html        pagina do site (conteudo)
   css/style.css     estilos (cores, layout, fontes)
   js/main.js        scripts (menu do celular, formulario do WhatsApp, fotos)
   img/              imagens
-    favicon.png, logo.png        icone e logo
+    favicon.png, logo.png        icone da marca (topo e rodape)
+    logo-completa.png            logo completa, fundo transparente (para fundos claros)
+    og-image.png                 imagem de previa ao compartilhar o link
     tela-*.jpg                   telas dos aplicativos
     campo-1.jpg, campo-2.jpg, campo-3.jpg   SUAS FOTOS (adicione, ver img/LEIA-ME.txt)
 

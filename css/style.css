@@ -1,4 +1,4 @@
-/* Cana360 - estilos do site */
+/* Cana Agro Tech - estilos do site */
 :root{
   --floresta:#0D3520;--floresta-2:#164A2D;--folha:#16A34A;--lima:#A6E04B;
   --papel:#F3F5EF;--branco:#fff;--tinta:#0F1B14;--suave:#55635A;--linha:#DCE3D6;
@@ -41,10 +41,11 @@ header.topo{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);ba
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--titulo);font-weight:800;font-size:1.4rem;letter-spacing:-.03em;color:var(--floresta)}
 .logo img{width:46px;height:46px;display:block}
-.nav ul{display:flex;gap:30px;list-style:none;padding:0;margin:0}
-.nav ul a{text-decoration:none;font-size:.95rem;font-weight:600;color:var(--suave);padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.logo span{white-space:nowrap}
+.nav ul{display:flex;gap:26px;list-style:none;padding:0;margin:0}
+.nav ul a{white-space:nowrap;text-decoration:none;font-size:.95rem;font-weight:600;color:var(--suave);padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
 .nav ul a:hover{color:var(--floresta);border-color:var(--folha)}
-.nav-acoes{display:flex;align-items:center;gap:10px}
+.nav-acoes{display:flex;align-items:center;gap:10px;white-space:nowrap}
 .menu-btn{display:none;width:44px;height:44px;border:1.5px solid var(--linha);border-radius:12px;background:var(--branco);color:var(--floresta);cursor:pointer;align-items:center;justify-content:center}
 
 /* hero */
@@ -185,7 +186,7 @@ footer a:hover{color:var(--lima)}
 .zap:hover{transform:scale(1.06)}
 .zap .ico{width:30px;height:30px}
 
-@media (max-width:980px){
+@media (max-width:1180px){
   .nav ul{display:none;position:absolute;left:0;right:0;top:76px;background:var(--branco);flex-direction:column;gap:0;padding:8px 28px 20px;border-bottom:1px solid var(--linha);box-shadow:0 20px 30px rgba(0,0,0,.08)}
   .nav ul.aberto{display:flex}
   .nav ul a{display:block;padding:14px 0;border-bottom:1px solid var(--linha);font-size:1rem}
