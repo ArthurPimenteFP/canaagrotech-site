@@ -368,3 +368,5 @@ img,svg{max-width:100%}
   .rodape .tg{flex:none;max-width:none}
   .rodape nav{flex:none;width:100%;flex-direction:row;justify-content:flex-start}
 }
+a.selo{text-decoration:none;transition:background .2s}
+a.selo.on:hover{background:var(--floresta-2);border-color:var(--floresta-2)}
