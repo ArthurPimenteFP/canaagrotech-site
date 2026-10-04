@@ -40,7 +40,7 @@ h2{font-size:clamp(2rem,3.7vw,3rem);font-weight:800;max-width:20ch}
 header.topo{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--titulo);font-weight:800;font-size:1.4rem;letter-spacing:-.03em;color:var(--floresta)}
-.logo img{width:46px;height:46px;display:block}
+.logo img{width:54px;height:54px;display:block}
 .logo span{white-space:nowrap}
 .nav ul{display:flex;gap:26px;list-style:none;padding:0;margin:0}
 .nav ul a{white-space:nowrap;text-decoration:none;font-size:.95rem;font-weight:600;color:var(--suave);padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
@@ -220,3 +220,44 @@ footer a:hover{color:var(--lima)}
   .logo{font-size:1.25rem}.logo img{width:40px;height:40px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* estilo Cana Agro Tech */
+.logo .nm{display:flex;flex-direction:column;line-height:.9}
+.logo .nm b{font-size:1.75rem;font-weight:800;letter-spacing:.01em;color:#0B3D1E}
+.logo .nm small{font-size:.76rem;font-weight:800;letter-spacing:.3em;color:#5FAE2A;margin-top:4px}
+footer .logo .nm b{color:#fff}footer .logo .nm small{color:var(--lima)}
+.hero h1 em{font-style:normal;color:var(--lima)}
+.hero{background-image:linear-gradient(90deg,rgba(13,53,32,.9) 35%,rgba(13,53,32,.4)),url(../img/campo-hero.jpg),repeating-linear-gradient(115deg,rgba(166,224,75,.055) 0 2px,transparent 2px 46px),radial-gradient(900px 500px at 85% 20%,rgba(34,197,94,.22),transparent 70%);background-size:cover,cover,auto,auto;background-position:center}
+#contato{background-image:linear-gradient(90deg,rgba(13,53,32,.92) 40%,rgba(13,53,32,.6)),url(../img/campo-cta.jpg);background-size:cover;background-position:center}
+.faixa{border-radius:40px 40px 0 0;margin-top:-40px;box-shadow:0 -14px 40px rgba(0,0,0,.14)}
+.publico div,.app{box-shadow:0 14px 34px rgba(13,53,32,.08)}
+@media (max-width:480px){.logo img{width:44px;height:44px}.logo .nm b{font-size:1.4rem}.logo .nm small{font-size:.62rem}}
+
+/* layout no estilo do modelo */
+.pill{border-radius:999px}
+.btn .ico{width:1.1em;height:1.1em}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:.8rem;font-weight:700;letter-spacing:.2em;color:var(--lima);margin-bottom:18px}
+.eyebrow::before{content:"";width:34px;height:2px;background:currentColor}
+.eyebrow.dark{justify-content:center;color:var(--folha)}
+.hero{padding:76px 0 140px;overflow:hidden}
+.hero-grid{align-items:center}
+.hero h1{max-width:14ch}
+.hero::after{content:"";position:absolute;left:-8%;right:-8%;bottom:-2px;height:120px;background:#fff;border-radius:50% 50% 0 0/100% 100% 0 0;z-index:1}
+.hero .wrap{position:relative;z-index:2}
+.hero-img{height:auto;display:flex;justify-content:center;position:relative}
+.hero-img .cel{position:static;transform:rotate(2deg);width:262px}
+.tag{position:absolute;right:0;top:34%;max-width:170px;font-weight:600;line-height:1.35;color:#fff}
+.tag::after{content:"";display:block;width:34px;height:2px;background:var(--lima);margin-top:12px}
+.centro{text-align:center;padding:40px 0 96px}
+.centro h2{max-width:none}
+.centro .intro{margin:18px auto 0}
+.cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px;text-align:left}
+.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--linha);border-radius:18px;padding:26px 24px 0;text-decoration:none;box-shadow:0 14px 34px rgba(13,53,32,.09);overflow:hidden;transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.card .ic{width:56px;height:56px;border-radius:50%;background:var(--floresta);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.card h3{font-size:1.3rem;font-weight:800}
+.card p{margin-top:8px;color:var(--suave);font-size:.97rem;line-height:1.55}
+.card .mais{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:700;color:var(--folha);font-size:.95rem}
+.card .img{display:block;height:170px;margin:22px -24px 0;background-size:cover;background-position:top center}
+@media (max-width:1100px){.cards4{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.hero{padding:48px 0 110px}.hero-img{height:auto}.hero-img .cel{width:220px}.tag{display:none}.cards4{grid-template-columns:1fr}}

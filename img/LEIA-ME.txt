@@ -5,3 +5,5 @@ Coloque aqui as 3 fotos do site, com EXATAMENTE estes nomes:
   campo-3.jpg
 
 Depois pode apagar este arquivo.
+
+Opcional: campo-hero.jpg (foto de fundo do topo) e campo-cta.jpg (fundo da secao de contato), com estes nomes.
