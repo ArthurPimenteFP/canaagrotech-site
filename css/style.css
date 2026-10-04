@@ -339,3 +339,32 @@ h1,h2,h3,h4{letter-spacing:-.035em}
 #mensagem .canais small{color:var(--suave)}#mensagem .canais .ic{background:#DDF3E4;color:var(--folha)}
 #mensagem .form{box-shadow:0 20px 50px rgba(13,53,32,.12)}
 @media (max-width:900px){.hero{padding:48px 0 90px}.hero h1 br{display:none}.hero-img{margin-bottom:0;justify-content:center}.band::after{opacity:.12}.cta::before{display:none}.cta-bt{align-items:flex-start}}
+
+/* ===== celular ===== */
+html,body{overflow-x:hidden}
+img,svg{max-width:100%}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:40px}
+  .hero-img{justify-content:center;gap:0}
+  .hero-img .cel{width:min(250px,70vw);transform:rotate(3deg)}
+  .hero .botoes .btn{flex:1 1 100%}
+  .hero-bg::before{width:100%;opacity:.45}
+  .fatos b{font-size:1.7rem}
+  .cta-grid{flex-direction:column;align-items:flex-start}
+  .cta-bt{align-items:stretch;width:100%}
+  .rodape nav{gap:16px 22px}
+  .legal{flex-direction:column}
+}
+@media (max-width:480px){
+  .hero{padding:36px 0 70px}
+  .hero::after{height:50px}
+  .centro h2{font-size:1.8rem}
+  .tela .cel{width:min(250px,70vw)}
+  .form{padding:22px 18px}
+  .zap{width:52px;height:52px;right:14px;bottom:14px}
+}
+@media (max-width:900px){
+  .rodape{flex-direction:column;align-items:flex-start;gap:20px}
+  .rodape .tg{flex:none;max-width:none}
+  .rodape nav{flex:none;width:100%;flex-direction:row;justify-content:flex-start}
+}
