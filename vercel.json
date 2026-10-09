@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "canaagrotech.com.br"
+        }
+      ],
+      "destination": "https://www.canaagrotech.com.br/$1",
+      "permanent": true
+    }
+  ]
+}

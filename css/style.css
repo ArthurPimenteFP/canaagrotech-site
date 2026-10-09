@@ -370,3 +370,35 @@ img,svg{max-width:100%}
 }
 a.selo{text-decoration:none;transition:background .2s}
 a.selo.on:hover{background:var(--floresta-2);border-color:var(--floresta-2)}
+
+/* ===== Para empresas ===== */
+#empresas{padding:96px 0}
+.emp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;align-items:stretch}
+.emp-card{position:relative;background:#fff;color:var(--tinta,#0F1B14);border-radius:20px;padding:34px 28px 30px;display:flex;flex-direction:column;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.emp-card.dest{outline:3px solid var(--lima);transform:translateY(-8px)}
+.emp-selo{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--lima);color:var(--floresta);font-size:.78rem;font-weight:800;padding:5px 16px;border-radius:999px;white-space:nowrap}
+.emp-card h3{font-size:1.4rem;font-weight:800;color:var(--floresta)}
+.emp-n{color:var(--suave);font-weight:600;margin-top:2px}
+.emp-preco{font-size:3rem;font-weight:800;color:var(--floresta);letter-spacing:-.03em;margin-top:18px;line-height:1}
+.emp-preco small{font-size:1.1rem;font-weight:700;margin-right:4px;vertical-align:top;position:relative;top:6px}
+.emp-preco span{font-size:1rem;font-weight:600;color:var(--suave);letter-spacing:0;margin-left:2px}
+.emp-por{color:var(--folha);font-weight:700;font-size:.92rem;margin:8px 0 22px}
+.emp-card ul{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:12px;flex:1}
+.emp-card li{display:flex;gap:10px;align-items:flex-start;font-size:.97rem;line-height:1.4}
+.emp-card li svg{width:20px;height:20px;flex:none;color:var(--folha);margin-top:1px}
+.emp-card .btn{width:100%}
+.emp-passos{list-style:none;padding:0;margin:56px 0 0;display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.emp-passos li{display:flex;align-items:center;gap:12px;color:#fff;font-weight:600}
+.emp-passos b{width:34px;height:34px;border-radius:50%;background:var(--lima);color:var(--floresta);display:inline-flex;align-items:center;justify-content:center}
+.emp-nota{text-align:center;color:#B7CBBE;margin:26px auto 0;max-width:70ch;font-size:.95rem}
+.emp-nota a{color:var(--lima);font-weight:700}
+@media (max-width:900px){#empresas{padding:64px 0}.emp-grid{grid-template-columns:1fr;gap:34px;max-width:460px;margin-inline:auto}.emp-card.dest{transform:none}.emp-passos{flex-direction:column;align-items:flex-start;max-width:340px;margin-inline:auto}}
+.emp-card .btn.vaz{color:var(--floresta);border-color:#B8C6BB}
+.emp-card .btn.vaz:hover{background:var(--floresta);color:#fff;border-color:var(--floresta)}
+
+/* Empresas: cartões de recursos (sem preços) */
+.emp-card .ic{width:52px;height:52px;border-radius:50%;background:var(--floresta);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.emp-card .ic .ico{width:24px;height:24px}
+.emp-card p.d{margin-top:8px;color:var(--suave);line-height:1.55;font-size:.97rem}
+.emp-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:44px}
+.emp-grid .emp-card{padding:30px 26px}
