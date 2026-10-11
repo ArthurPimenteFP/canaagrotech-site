@@ -402,3 +402,45 @@ a.selo.on:hover{background:var(--floresta-2);border-color:var(--floresta-2)}
 .emp-card p.d{margin-top:8px;color:var(--suave);line-height:1.55;font-size:.97rem}
 .emp-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:44px}
 .emp-grid .emp-card{padding:30px 26px}
+
+/* ---- telas novas: Qualidade e Auditoria ---- */
+.s-qual{background-image:url(../img/tela-qualidade.jpg)}
+.s-qualr{background-image:url(../img/tela-qualidade-resumo.jpg)}
+.s-aud{background-image:url(../img/tela-auditoria.jpg)}
+.s-audr{background-image:url(../img/tela-auditoria-resumo.jpg)}
+
+/* galeria compacta das calculadoras (substitui as 4 seções longas) */
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 28px;margin-top:56px}
+.galeria figure{margin:0;text-align:center}
+.galeria .cel{width:min(230px,100%);margin:0 auto 24px;box-shadow:0 30px 60px rgba(13,53,32,.2)}
+.galeria h3{font-size:1.2rem;font-weight:800}
+.galeria p{margin:8px auto 0;font-size:.95rem;color:var(--suave);max-width:26ch;line-height:1.55}
+
+/* duas telas lado a lado */
+.fig{min-width:0}
+.duo{display:flex;justify-content:center;align-items:flex-start;gap:20px}
+.tela .duo .cel{width:min(214px,46%);margin:0;flex:none}
+.tela .duo .cel+.cel{margin-top:48px}
+.tela .exemplo{text-align:center;max-width:none;margin-top:26px;font-size:.85rem}
+.tela.rev .fig{order:2}
+.tela#qualidade{margin-top:56px}
+.chips{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.chips li{background:var(--papel);border:1px solid var(--linha);border-radius:999px;padding:10px 18px;font-weight:600;font-size:.95rem;color:var(--floresta)}
+.ferr-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:32px}
+.ferr-nota{text-align:center;margin:22px auto 0;color:var(--suave);font-size:.95rem}
+@media (max-width:1100px){.galeria{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){
+  .tela.rev .fig{order:0}
+  .tela .duo .cel{width:min(200px,44%)}
+  .galeria{gap:36px 16px;margin-top:40px}
+  .galeria .cel{width:min(190px,100%)}
+}
+@media (max-width:480px){
+  .tela .duo{gap:12px}
+  .tela .duo .cel+.cel{margin-top:32px}
+  .chips li{font-size:.9rem;padding:9px 14px}
+}
+.eyebrow.esq{justify-content:flex-start}
+.tela .duo .cel{width:min(236px,46%)}
+@media (max-width:900px){.tela .duo .cel{width:min(200px,44%)}}
+@media (max-width:900px){.tela.rev .fig{order:-1}}
