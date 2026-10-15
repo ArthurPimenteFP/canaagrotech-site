@@ -2,14 +2,14 @@
 (function(){
   /* fotos opcionais */
   var faixa=document.getElementById('fotos');
-  faixa.querySelectorAll('img[data-src]').forEach(function(im){
+  if(faixa)faixa.querySelectorAll('img[data-src]').forEach(function(im){
     var t=new Image();
     t.onload=function(){im.src=im.getAttribute('data-src');im.hidden=false;faixa.hidden=false;};
     t.src=im.getAttribute('data-src');
   });
 
   /* ano no rodapé */
-  document.getElementById('ano').textContent=new Date().getFullYear();
+  var ano=document.getElementById('ano');if(ano)ano.textContent=new Date().getFullYear();
 
   /* menu no celular */
   var btn=document.getElementById('menu-btn'),menu=document.getElementById('menu');
@@ -22,7 +22,8 @@
   document.addEventListener('keydown',function(e){if(e.key==='Escape')fechar();});
 
   /* formulário: monta a mensagem e abre o WhatsApp */
-  document.getElementById('form-contato').addEventListener('submit',function(e){
+  var form=document.getElementById('form-contato');
+  if(form)form.addEventListener('submit',function(e){
     e.preventDefault();
     var f=e.target,nome=f.nome.value.trim();
     if(!nome){f.nome.focus();f.nome.style.borderColor='#ef4444';return;}

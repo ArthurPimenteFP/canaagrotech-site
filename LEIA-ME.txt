@@ -1,6 +1,10 @@
 SITE CANA AGRO TECH - estrutura da pasta
 
-  index.html        pagina do site (conteudo)
+  index.html        pagina inicial
+  controle-de-colhedoras/index.html   pagina: controle de colhedoras (app Cana360)
+  qualidade-da-colheita/index.html    pagina: qualidade da colheita
+  consultoria/index.html              pagina: consultoria
+  sitemap.xml, robots.txt             para o Google (reenviar o sitemap no Search Console)
   css/style.css     estilos (cores, layout, fontes)
   js/main.js        scripts (menu do celular, formulario do WhatsApp, fotos)
   img/              imagens
